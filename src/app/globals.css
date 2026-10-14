@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --color-teal: #00A19C;
+  --color-burgundy: #80142B;
+  --color-grey: #C6C6C6;
+  --color-black: #111111;
+  --color-hero: #F7F7F7;
+  --color-projects: #ECECEC;
+  --color-lines: #BDBDBD;
+  --color-track: #D4D4D4;
+  --color-muted: #4A4A4A;
+}
+
+body {
+  color: #111111;
+  font-family: var(--font-body), "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), "Montserrat", sans-serif;
+}
+
+.font-heading {
+  font-family: var(--font-heading), "Montserrat", sans-serif;
+}
+
+.font-anton {
+  font-family: var(--font-anton), Impact, sans-serif !important;
+}
+
+.font-body {
+  font-family: var(--font-body), "Open Sans", sans-serif;
+}
+
+/* Strict flat styles: no rounded corners, no shadows */
+.flat-box {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+/* Keyboard focus visibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #80142B;
+  outline-offset: 2px;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
