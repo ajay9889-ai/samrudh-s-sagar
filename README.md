@@ -221,3 +221,4 @@ Access the admin dashboard at [http://localhost:3000/admin](http://localhost:300
 - **Spam Protection**: Invisible honeypot field traps automated spam bots without interrupting legitimate users.
 - **Semantic HTML & SEO**: Semantic tags (`<header>`, `<main>`, `<section>`, `<footer>`), OpenGraph metadata, descriptive heading hierarchy (`h1`, `h2`, `h3`), visible keyboard focus rings (`:focus-visible`), and `prefers-reduced-motion` accessibility support.
 # samrudh-s-sagar
+# samrudh-s-sagar
